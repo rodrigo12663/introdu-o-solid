@@ -78,7 +78,7 @@ describe("UsersRepository", () => {
       email: "vinifraga@rocketseat.com",
     });
 
-    const admin = usersRepository.turnAdmin(user);
+    const admin = usersRepository.turnAdmin(user.id);
 
     expect(admin).toMatchObject({
       name: user.name,
