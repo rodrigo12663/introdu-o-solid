@@ -12,7 +12,7 @@ class ListAllUsersUseCase {
 
     const user = this.usersRepository.findById(user_id )
 
-    if (!user) throw new Error("User not exists");
+    if (!user) throw new Error("User não existente");
 
     if (!user.admin) throw new Error("User is not an administrator");
 
